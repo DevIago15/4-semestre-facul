@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2222
+namespace ContaBancaria
 {
     public class ContaEspecial : contaBancaria
     {
@@ -29,7 +29,7 @@ namespace _2222
             base.Abertura(depositoInicial);
             try
             {
-                Console.WriteLine("Digite o Limite da Conta: ");
+                Console.Write("Digite o Limite da Conta: ");
                 Limite = Convert.ToDouble(Console.ReadLine());
                 msg = "Limite Cadastrado com Sucesso!";
 

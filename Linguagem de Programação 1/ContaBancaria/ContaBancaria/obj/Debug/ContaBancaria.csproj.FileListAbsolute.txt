@@ -1,0 +1,7 @@
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\bin\Debug\ContaBancaria.exe.config
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\bin\Debug\ContaBancaria.exe
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\bin\Debug\ContaBancaria.pdb
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\obj\Debug\ContaBancaria.csproj.AssemblyReference.cache
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\obj\Debug\ContaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\obj\Debug\ContaBancaria.exe
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ContaBancaria\ContaBancaria\obj\Debug\ContaBancaria.pdb
