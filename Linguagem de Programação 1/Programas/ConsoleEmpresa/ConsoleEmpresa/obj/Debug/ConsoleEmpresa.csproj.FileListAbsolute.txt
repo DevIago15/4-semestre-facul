@@ -5,3 +5,10 @@ C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1
 C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.csproj.CoreCompileInputs.cache
 C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.exe
 C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.pdb
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\bin\Debug\ConsoleEmpresa.exe.config
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\bin\Debug\ConsoleEmpresa.exe
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\bin\Debug\ConsoleEmpresa.pdb
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.csproj.AssemblyReference.cache
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.csproj.CoreCompileInputs.cache
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.exe
+C:\Users\Lagoa\OneDrive\Área de Trabalho\pes\facul\Linguagem de Programação 1\Programas\ConsoleEmpresa\ConsoleEmpresa\obj\Debug\ConsoleEmpresa.pdb

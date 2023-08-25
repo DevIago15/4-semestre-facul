@@ -11,7 +11,7 @@ namespace ConsoleEmpresa
         public int QdeHoraExtra { get; set; }
         public double ValorHoraExtra { get; set; }
 
-        public Mensalista() : base()
+        public Mensalista() :base()
         {
             QdeHoraExtra = 0;
             ValorHoraExtra = 0.0;
@@ -25,7 +25,7 @@ namespace ConsoleEmpresa
                 Console.Write("Quantidade de Horas Extras: ");
                 QdeHoraExtra = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Valor da Hora Extra: ");
+                Console.Write("Valor da Hora Extra: ");
                 ValorHoraExtra = Convert.ToInt32(Console.ReadLine());
             }
             catch (Exception ex)
@@ -38,14 +38,14 @@ namespace ConsoleEmpresa
         {
             return base.MostrarFuncionario() +
                 "\nQuantidade de Horas Extras Trabalhadas: " + QdeHoraExtra +
-                "\n Valor da Hora Extra: " + ValorHoraExtra +
+                "\nValor da Hora Extra: " + ValorHoraExtra +
                 "\nSalário Bruto: R$ " + CalcularSalarioBruto() +
                 "\nSalário Liquido: R$ " + CalcularSalarioLiquido();
         }
 
         public override double CalcularSalarioBruto()
         {
-            return base.SalarioBase + QdeHoraExtra * ;
+            return base.SalarioBase + (QdeHoraExtra * ValorHoraExtra) + base.Adicional;
         }
 
         public override double CalcularSalarioLiquido()
