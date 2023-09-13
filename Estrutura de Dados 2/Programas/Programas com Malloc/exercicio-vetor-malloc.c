@@ -80,6 +80,8 @@ int main(){
 	printf("\n=============================\n");
 	
 	// -- FIM DO VETOR 3 -- //
-	
+	free(v);
+	free(v2);
+	free(v3);
 	return 0;
 }
