@@ -1318,8 +1318,14 @@ User Defined
 		Counter
 		DB-9 Macro
 		Delay
+		IAGO.Add.1b
+		IAGO.Add.4b
+		IAGO.Buffer.4
+		IAGO.Decode.2
+		IAGO.Nand.4b
+		IAGO.Sub.1b
+		IAGO.Sub.4b
 		IAGO.ULA.4b
-		JAAV.sum1b
 		Lock
 		Macro
 		Macro 2
