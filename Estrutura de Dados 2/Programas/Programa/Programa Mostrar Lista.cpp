@@ -22,7 +22,7 @@ bool isEmpty(Lista *p){
 	}
 }
 
-// função para inserir o nó no inicio da lista
+// função para inserir um novo elemento no inicio da lista
 Lista * insereInicio(Lista *p, int x){
 	Lista *novo;
 	
@@ -41,6 +41,35 @@ Lista * insereInicio(Lista *p, int x){
 	return p;
 }
 
+// função para inserir um novo elemento no final da lista
+Lista * insereFinal(Lista *p, int x){
+	
+	// declarar dois ponteiros para a lista
+	// o ponteiro novo aponta para o novo elemento da lista
+	// o ponteiro aux percorre a lista para encontrar seu fim
+	Lista *novo, *aux;
+	
+	//alocar memoria para o ponteiro novo
+	novo = (Lista *) malloc(sizeof(Lista));
+	
+	// armazenar a informação no novo nó da lista
+	novo->info = x;
+	
+	// o ponteiro prox do nó novo apontar para null (será o ultimo elemento da lista)
+	novo->prox = NULL;
+	
+	// considerar lista vazia
+	if(isEmpty(p)){
+		p = novo;
+	} else{
+		aux = p;
+		while(aux->prox != NULL){
+			aux = aux->prox;
+		}
+		aux->prox = novo;
+	}
+	return p;	
+}
 // função para mostrar cada um dos elementos (nós) da lista
 void mostrarLista(Lista *p) { 
 	
@@ -61,6 +90,25 @@ void mostrarLista(Lista *p) {
 	}
 }
 
+// funcao pra localizar um elemento da lista
+// caso o elemento pertença a lista, será retornado seu endereco
+// caso contrario retornara NULL
+Lista * buscaElemento(Lista *p, int x){
+	// declarar o ponteiro aux pra percorrer a lista, caso ela tenha elementos
+	Lista *aux;
+	aux = p; // p é o inicio da lista
+	
+	while(aux != NULL && aux->info != x){
+		aux = aux->prox;
+	}
+	
+	// aux aponta para null significa lista vazia ou o
+	// elemento nao pertence a lista
+	//aux aponta para o elemento significa que o elemento
+	// pertence a lista. portanto, aux retorna null ou o end do elemento
+	return aux;
+}
+
 int main(){
 	int op = 0, info;
 	
@@ -69,8 +117,10 @@ int main(){
 	
 	do{
 		printf("\n1 - Inserir no Inicio da Lista\n");
-		printf("2 - Mostrar os Elementos da Lista\n");
-		printf("3 - Fim do Programa\n");
+		printf("2 - Inserir no Fim da Lista\n");
+		printf("3 - Mostrar os Elementos da Lista\n");
+		printf("4 - Buscar Elemento da Lista\n");
+		printf("5 - Fim do Programa\n");
 		printf("Escolha sua Opcao: ");
 		scanf("%d", &op);
 		
@@ -81,19 +131,28 @@ int main(){
 				p = insereInicio(p, info); // (recebendo no inicio e enviando para a função)
 				break;
 			case 2:
+				printf("\nDigite um Novo Elemento da Lista: ");
+				scanf("%d", &info);
+				p = insereFinal(p, info);
+				break;
+			case 3:
 				system("cls"); // limpando a tela
 				printf("\n ------- Lista -------\n");
 				mostrarLista(p);
 				printf("\n ----------------------\n");
 				getch();
 				break;
-			case 3:
+			case 4:
+				printf("\nDigite o Elemento que Deseja Buscar: ");
+				scanf("%d", &info);
+				break;
+			case 5:
 				printf("\nSaindo do Programa...\n");
 				break;
 			default:
 				printf("\nOpcao Invalida!! Tente Novamente\n");
 				break;
 		}
-	} while(op != 3);
+	} while(op != 5);
 	return 0;
 }
