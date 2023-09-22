@@ -1,9 +1,8 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 header {
@@ -37,18 +36,22 @@ ul {
     padding-left: 20px;
 }
 
-a {
-    color: white;
+a{
     text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 2px solid red;ex
+    border-bottom: 2px solid red;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 33px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }

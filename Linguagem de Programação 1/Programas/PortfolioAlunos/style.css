@@ -1,9 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('sua-imagem.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
 .imagens-alunos{
     text-align: center;
     display: flex;
 }
 
 .image-wrapper{
+    position: relative;
     display: inline-block;
     margin-right: 10px;
     padding: 0px;
@@ -14,6 +26,11 @@
     height: auto;
     display: block;
     margin: 0 auto;
+    transition: filter 0.3s ease;
+}
+
+.image-wrapper img:hover{
+    filter: brightness(0.7);
 }
 
 .image-wrapper p{
@@ -36,6 +53,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 ul.navbar{
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;

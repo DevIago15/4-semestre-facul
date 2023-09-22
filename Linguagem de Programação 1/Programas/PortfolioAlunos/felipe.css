@@ -75,10 +75,12 @@ footer {
     position: sticky;
     bottom: 0;
 }
+
 a {
     color: white;
     text-decoration: none;
 }
+
 a:hover {
     border-bottom: 2px solid red;
 }
