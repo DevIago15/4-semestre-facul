@@ -109,8 +109,78 @@ Lista * buscaElemento(Lista *p, int x){
 	return aux;
 }
 
+Lista * buscaInsere(Lista *p, int x){
+	Lista *ant = NULL, *aux, *novo;
+	novo = (Lista *) malloc(sizeof(Lista));
+	novo->info;
+	
+	// lista vazia
+	if(p == NULL){
+		novo->prox = p;
+		p = novo;
+	} else{
+		aux = p;
+		while(aux != NULL && aux->info !=x){
+			ant = aux;
+			aux = aux->prox;
+		} if (ant == NULL){
+			novo->prox = NULL;
+ 			p = novo;
+		} else{
+			novo->prox = aux;
+			ant->prox = novo;
+		}
+	}
+	return p;
+}
+
+Lista *removeInicio(Lista *p){
+	Lista *aux;
+	
+	if(p != NULL){
+		aux = p;
+		p = p->prox;
+		free(aux);
+	}
+	return p;
+}
+
+Lista *removeFim(Lista *p){
+	Lista *aux, *ant = NULL;
+	
+	if(p != NULL){
+		aux = p;
+		while(aux->prox != NULL){
+			ant = aux;
+			aux = aux->prox;
+		} if(ant == NULL){
+			p = aux->prox;
+		} else{
+			ant->prox = aux->prox;
+			free(aux);
+		}
+		return p;
+	}
+}
+
+
+// busca o anterior
+Lista *buscaAnt(Lista *p, intx){
+	Lista *aux, *ant = NULL;
+	aux = p;
+	
+	while(aux != NULL && aux->prox !=x){
+		ant = aux;
+		aux = aux->prox;
+	} if(aux == NULL){
+		ant = NULL;
+		return ant;
+	}
+	
+}
+
 int main(){
-	int op = 0, info;
+	int op = 0, info, e;
 	
 	// p é o ponteiro que aponta para o inicio da lista
 	Lista *p = NULL; //iniciando a lista vazia (SEMPRE INICIAR VAZIA)
@@ -120,7 +190,11 @@ int main(){
 		printf("2 - Inserir no Fim da Lista\n");
 		printf("3 - Mostrar os Elementos da Lista\n");
 		printf("4 - Buscar Elemento da Lista\n");
-		printf("5 - Fim do Programa\n");
+		printf("5 - Buscar e Inserir um Elemento\n");
+		printf("6 - Remover Elemento do Inicio\n");
+		printf("7 - Remover Elemento do Fim\n");
+		printf("8 - Remover No da Lista\n");
+		printf("9 - Fim do Programa\n");
 		printf("Escolha sua Opcao: ");
 		scanf("%d", &op);
 		
@@ -145,14 +219,32 @@ int main(){
 			case 4:
 				printf("\nDigite o Elemento que Deseja Buscar: ");
 				scanf("%d", &info);
+				p = buscaElemento(p, info);
+				printf("\nEndereco do Elemento: %d", p);
 				break;
 			case 5:
+				printf("\nDigite o Elemento que Deseja Buscar e Inserir no Lugar: ");
+				scanf("%d", &info);
+				p = buscaInsere(p, info);
+				printf("\nElemento Inserido com Sucesso!");
+				break;
+			case 6:
+				p = removeInicio(p);
+				printf("\nElemento Removido do Inicio\n");
+				break;
+			case 7:
+				p = removeFim(p);
+				printf("\nElemento Removido do Fim!\n");
+				break;
+			case 8:
+				break;
+			case 9:
 				printf("\nSaindo do Programa...\n");
 				break;
 			default:
 				printf("\nOpcao Invalida!! Tente Novamente\n");
 				break;
 		}
-	} while(op != 5);
+	} while(op != 9);
 	return 0;
 }
