@@ -126,7 +126,9 @@
     </Compile>
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Data\CategoriaData.cs" />
     <Compile Include="Models\Data\Data.cs" />
+    <Compile Include="Models\Data\ProdutoData.cs" />
     <Compile Include="Models\Itens_Pedido.cs" />
     <Compile Include="Models\Pedido.cs" />
     <Compile Include="Models\Produto.cs" />
