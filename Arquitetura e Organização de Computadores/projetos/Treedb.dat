@@ -1322,7 +1322,9 @@ User Defined
 		IAGO.Add.4b
 		IAGO.Buffer.4
 		IAGO.Decode.2
+		IAGO.Decode1b
 		IAGO.Mux.4x1
+		IAGO.Mux2x1
 		IAGO.Nand.4b
 		IAGO.Sub.1b
 		IAGO.Sub.4b

@@ -10,7 +10,6 @@ typedef struct No{
 } Lista; // lista é o tipo da estrutura do nó (toda vez que declararmos o tipo lista, ele segue com a estrutura definida)
 
 // função para verificar se a lista está vazia ou não (p é o ponteiro que aponta para a lista)
-
 bool isEmpty(Lista *p){
 	
 	if(p == NULL){
@@ -30,7 +29,6 @@ Lista * insereInicio(Lista *p, int x){
 	novo = (Lista *) malloc(sizeof(Lista));
 	
 	// armazenar a info no novo nó (novo que aponta para info recebe x)
-	
 	novo->info = x;
 	
 	// conectar o novo nó na lista
