@@ -16,6 +16,11 @@ namespace Ecommerce.Models
         public double Valor { get; set; }
         public string UrlImagem { get; set; }
         public Categoria Categoria { get; set; }
+
+        public Produto()
+        {
+            Categoria = new Categoria();
+        }
     }
 
 }
