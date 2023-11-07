@@ -16,32 +16,32 @@ Estrutura básica do HTML:
     * <tag> conteúdo </tag> = indica o conteúdo dentro da tag
 
 Estrutura de uma página web simples:
-<html>
-	<head>
+html
+	head
 NÃO VISIVEL = incluir a formatação da página, língua do país, versão, locais onde os arquivos estão armazenados
-	</head>
-	<body>
+	/head
+	body
 	VISIVEL = inclui as informações que quer incluir na pagina, imagens, textos
-</body>
-</html>
+/body
+/html
 Tags que auxiliam os motores de busca na localização da sua página:
-    * <meta name = “description” content = “descrição completa sobre do que se trata a página (max 156 char) />”
-    * <meta name = “keywords” content = “UNIRP, Ciência da Computação, Linguagem de Programação” />
-    * <meta name = “author” content = “Iago Detona” />
+    * meta name = “description” content = “descrição completa sobre do que se trata a página (max 156 char) />”
+    * meta name = “keywords” content = “UNIRP, Ciência da Computação, Linguagem de Programação” />
+    * meta name = “author” content = “Iago Detona” />
 
 Tags de texto de cabeçalho:
-    * <h1>texto </h1>
-    * <h2> texto </h2>
-    * <h3> texto </h3>
-    * <h4> texto </h4>
-    * <h5> texto </h5>
-    * <h6> texto </h6>
+    * h1> texto /h1
+    * h2> texto /h2
+    * h3> texto /h3
+    * h4> texto /h4
+    * h5> texto /h5
+    * h6> texto /h6
 
 Inserindo uma imagem como link:
-<a href = “link” target = “_blank”(abre outra pagina) ou “_self”(abre nela mesmo)>
+a href = “link” target = “_blank”(abre outra pagina) ou “_self”(abre nela mesmo)>
 
 Para inserir uma tabela:
-Use a tag <table>, e as tags <tr> (linha) e <td> (coluna) para formatação
+Use a tag table>, e as tags <tr (linha) e <td (coluna) para formatação
 
 Modelo MVC
 •	View – utilizando HTML, C# e Bootstrap
