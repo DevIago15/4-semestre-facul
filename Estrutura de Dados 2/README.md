@@ -163,6 +163,8 @@ typedef struct No {
 	struct no *ant, *prox;
 }ListaDupla;
 
+*Exemplo do código em /programas/listadupla*
+
 
 
 

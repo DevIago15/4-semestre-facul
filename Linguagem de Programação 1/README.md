@@ -50,8 +50,8 @@ Inserindo uma imagem como link:
 Para inserir uma tabela:
 Use a tag <table>, e as tags <tr> (linha) e <td> (coluna) para formatação
 ```
-Modelo MVC
-•	View – utilizando HTML, C# e Bootstrap
-•	Model -
-•	Controller 
+Modelo MVC:
+*   View – utilizando HTML, CSS e Bootstrap
+*   Model - C# e SQLServer
+*   Controller - C#
 
