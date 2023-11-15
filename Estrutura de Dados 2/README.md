@@ -156,16 +156,19 @@ Operações em uma lista ordenada:
 
 ## 07/11/2023 - Lista Duplamente Encadeada 
 Numa lista duplamente encadeada, cada nó tem dois campos de ligação (ponteiros), sendo que um deles aponta para o próximo nó e o outro aponto para o nó anterior.
+```
 Declaração desse novo modelo de lista:
-
 typedef struct No {
     int info;
 	struct no *ant, *prox;
 }ListaDupla;
-
+```
 *Exemplo do código em /programas/listadupla*
 
+## 14/11/2023 - Lista Encadeada Circular
+Em uma lista encadeada circular o último nó da lista não aponta para NULL, ele aponta para o primeiro nó da lista. Portanto é necessário definir um nó para ser o primeiro, pois não há um primeiro ou um último nó, uma vez que a ligação forma um "círculo". 
 
+*Exemplo do código em /programas/listadupla*
 
 
 
