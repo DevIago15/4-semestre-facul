@@ -168,7 +168,7 @@ typedef struct No {
 ## 14/11/2023 - Lista Encadeada Circular
 Em uma lista encadeada circular o último nó da lista não aponta para NULL, ele aponta para o primeiro nó da lista. Portanto é necessário definir um nó para ser o primeiro, pois não há um primeiro ou um último nó, uma vez que a ligação forma um "círculo". 
 
-*Exemplo do código em /programas/listadupla*
+*Exemplo do código em /programas/lista-circular*
 
 
 

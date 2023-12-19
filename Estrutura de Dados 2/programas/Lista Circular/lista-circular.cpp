@@ -51,7 +51,7 @@ ListaC *removeLC(ListaC *p, int x)
 	if( p!= NULL)
 	{
 		aux = p;
-		if (p->info == x)
+		if (p->info == x && p->prox == p)
 		{
 			while (aux->prox != p)
 			{
@@ -98,7 +98,8 @@ int main(){
 		printf("\n3 - Insere Depois de X");
 		printf("\n4 - Insere no Fim");
 		printf("\n5 - Mostrar Lista");
-		printf("\n6 - Sair do Programa");
+		printf("\n6 - Remover Item da Lista");
+		printf("\n7 - Sair do Programa");
 		printf("\nDigite sua Opcao: ");
 		scanf("%d", &op);
 		
@@ -117,12 +118,17 @@ int main(){
 				mostrarListaLC(p);
 				break;
 			case 6:
+				printf("\nDigite o Valor que Deseja Remover: ");
+				scanf("%d", &x);
+			 	p = removeLC(p, x);
+				break;
+			case 7:
 				printf("\nSaindo do Programa..");
 				break;
 			default:
 				printf("ERRO: Opcao nao Encontrada!\n Sugerimos você tentar novamente...");
 				break;
 		} 
-	}while(op!=6);
+	}while(op!=7);
 	return 0;
 }
